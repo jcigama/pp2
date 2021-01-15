@@ -12,7 +12,7 @@ function largest($numbers) {
         $largest = $number;
     }
 
-    echo "Largest number: $largest";
+    echo "Largest number: $largest<br>";
 }
 
 function removeDups($numbers) {
