@@ -21,3 +21,23 @@ function removeDups($numbers) {
         echo "$number <br>";
     }
 }
+
+function distribution($numbers) {
+    $filteredArray = array_unique($numbers);
+    $newArray = array();
+
+    foreach ($filteredArray as $numInterest){
+
+        $count = 0;
+        foreach ($numbers as $number){
+            if ($number == $numInterest){
+                $count++;
+            }
+        }
+        $newArray[$numInterest] = $count;
+    }
+
+    foreach ($newArray as $newNums => $count){
+        echo "Number distribution:  $newNums - $count <br>";
+    }
+}
