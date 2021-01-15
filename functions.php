@@ -14,3 +14,10 @@ function largest($numbers) {
 
     echo "Largest number: $largest";
 }
+
+function removeDups($numbers) {
+    $newArray = array_unique($numbers);
+    foreach ($newArray as $number){
+        echo "$number <br>";
+    }
+}
